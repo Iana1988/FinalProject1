@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!--
+    Bangkok Travel Website - Culture & History page with images, cultural facts, and a mini quiz
+    Author: Iana Amineva
+    Date: 07.18.2025
+    Filename: bangkok_culture.html
+  -->
+  <meta charset="utf-8" />
+  <title>Culture & History</title>
+  <link href="bangkok_styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="top-block">
+        <nav>
+          <div class="nav-container">
+            <div class="site-title">Discover Bangkok</div>
+              <ul>
+                <li><a href="bangkok_home.html">Home</a></li>
+                <li><a href="bangkok_culture.html">Culture & History</a></li>
+                <li><a href="bangkok_modern.html">Modern Bangkok</a></li>
+                <li><a href="bangkok_about_me.html">About Me</a></li>
+              </ul>
+          </div>
+        </nav>
+          <div class="image-row">
+            <img src="bangkok_culture1.png" alt="Thai Temple" />
+            <img src="bangkok_culture2.png" alt="The Grand Palace" />
+            <img src="bangkok_culture3.png" alt="Thai religious figures" />
+          </div>
+      </div>
+    </header>
+
+    <article>
+      <section class="content">
+        <div class="left-box">
+          <h2>Explore Thai Culture</h2>
+          <p><strong>Culture & Traditions.</strong>&nbsp;Thai culture is built on deep respect for elders, for the royal family, and for traditions passed
+		     down through generations. Temples, known as wats, are more than places of worship; they are the spiritual heart of every neighborhood. Family
+		     life in Thailand is strong and close knit, with grandparents, parents, and children often living together under one roof. Everywhere
+		     you go, you will notice kindness, calmness, and the graceful way Thai people greet each other with a wai, hands pressed together like a prayer.</p>	
+	      <p><strong>The Grand Palace.</strong>&nbsp;No trip to Bangkok is complete without seeing the Grand Palace, a stunning blend
+			 of gold, marble, and Thai artistry. This historic royal complex was once the official residence of Thai kings and still holds 
+			 deep cultural importance today. Inside the palace grounds stands the Temple of the Emerald Buddha, one of the most sacred places in Thailand. As you
+			 walk through its shining halls and elegant courtyards, you will feel the power of centuries of tradition and royal history.</p>			 
+        </div>
+
+        <div class="right-box">
+          <h2>Did You Know?</h2>
+          <form id="quiz-form">
+            <p>1. What is the capital of Thailand?</p>
+            <label><input type="radio" name="q1" value="a"> Chiang Mai</label><br>
+            <label><input type="radio" name="q1" value="b"> Bangkok</label><br>
+            <label><input type="radio" name="q1" value="c"> Phuket</label>
+
+            <p>2. What does "Wat" mean in Thai?</p>
+            <label><input type="radio" name="q2" value="a"> Market</label><br>
+            <label><input type="radio" name="q2" value="b"> Temple</label><br>
+            <label><input type="radio" name="q2" value="c"> River</label>
+
+            <br><br>
+            <button type="button" onclick="checkQuiz()">Check</button>
+            <p id="quiz-result"></p>
+          </form>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      &copy; 2025 Iana Amineva
+    </footer>
+  </div>
+
+  <script src="quiz_script.js"></script>
+</body>
+</html>
+
+

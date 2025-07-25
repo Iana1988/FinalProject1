@@ -1,0 +1,94 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <!--
+    Bangkok Travel Website - About Me page of a Bangkok travel website with personal story, kids' quotes, and a site rating form
+    Author: Iana Amineva
+    Date: 07.22.2025
+    Filename: bangkok_about_me.html
+  -->
+  <meta charset="utf-8" />
+  <title>About Me</title>
+  <link href="bangkok_styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="top-block">
+	    <nav>
+          <div class="nav-container">
+            <div class="site-title">Discover Bangkok</div>
+              <ul>
+                <li><a href="bangkok_home.html">Home</a></li>
+                <li><a href="bangkok_culture.html">Culture & History</a></li>
+                <li><a href="bangkok_modern.html">Modern Bangkok</a></li>
+                <li><a href="bangkok_about_me.html">About Me</a></li>
+              </ul>
+          </div>
+		</nav>
+          <div class="image-row">
+            <img src="about1.png" alt="Thailand sunset" />
+            <img src="about2.png" alt="Thai lifestyle" />
+            <img src="about3.png" alt="Thai masks" />
+          </div>
+      </div>
+    </header>
+
+    <article>
+      <section class="content">
+        <div class="left-box">
+          <h2>About Me</h2>
+		  <p> My name is Iana, and I love to travel and explore new cultures. My family and I spent a long time
+		      preparing for our trip to Thailand, and even though the flight was long, it was absolutely worth 
+			  it. We were amazed by the beauty of the landscapes, the rich traditions, and the peaceful spirit we
+			  found everywhere. Thailand truly surprised us with its warm people, delicious food, and
+			  unforgettable experiences.</p>
+          <p><strong>What Young Travelers Said:</strong></p>
+          <blockquote>
+            <p><em>"The rooftop pool at Baiyoke was so cool! I felt like I was swimming in the sky!"</em> — Adelina, 10 years old</p>
+          </blockquote>
+          <blockquote>
+            <p><em>"There were so many little shops with fun stuff and tasty food. The fruits were my favorite!"</em> — Regina, 13 years old</p>
+          </blockquote>
+        </div>
+
+        <div class="right-box">
+          <h2>Share Your Thoughts</h2>
+          <form id="review-form">
+            <label for="rating">How would you rate this site?</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" value="5" />
+            
+            <div class="scale-labels">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+              <span>6</span>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+            </div>
+            <br>
+			</br>
+            <label for="comment">Add your thoughts</label>
+            <textarea id="comment" name="comment" rows="5" placeholder="Write your thoughts here..."></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+
+          <p id="review-message"></p>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      &copy; 2025 Iana Amineva
+    </footer>
+  </div>
+
+  <script src="review_script.js"></script>
+</body>
+</html>
